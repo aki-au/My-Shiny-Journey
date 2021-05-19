@@ -1,1 +1,1 @@
-This is a collection of the individual programs that I will eventually compile to make the app
+This is a collection of the individual programs that I will eventually compile to make the final shiny app
