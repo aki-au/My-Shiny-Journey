@@ -22,7 +22,7 @@ shade = TRUE
  )
 print(csqdosevssize$expected)
 print(dosevssize)
-print("We reject the null hypothesis ")
+print("We reject the null hypothesis that there is no relation between dose and growth ")
 csqdosevssupp=chisq.test(dosevssupp)
 mosaic(~ dose + supp,
        direction = c("v", "h"),
@@ -31,7 +31,7 @@ mosaic(~ dose + supp,
 )
 print(csqdosevssupp$expected)
 print(dosevssupp)
-print("We accept the null hypothesis ")
+print("We accept the null hypothesis that dose and supplement are independant")
 csqsuppvssize=chisq.test(suppvssize)
 mosaic(~ supp + size,
        direction = c("v", "h"),
@@ -40,6 +40,6 @@ mosaic(~ supp + size,
 )
 print(csqsuppvssize$expected)
 print(suppvssize)
-print("We reject the null hypothesis ")
+print("We reject the null hypothesis that supplement and size are independant")
 
 
